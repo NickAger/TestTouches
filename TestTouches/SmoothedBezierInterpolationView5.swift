@@ -38,7 +38,7 @@ class SmoothedBezierInterpolationView5: UIView {
     
     override func layoutSublayers(of layer: CALayer) {
         if layer === self.layer {
-            shapeLayer.frame = layer.frame
+            shapeLayer.frame = layer.bounds
         }
     }
     

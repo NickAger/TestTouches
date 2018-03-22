@@ -20,17 +20,17 @@ class TableViewController: UITableViewController {
         let viewController = segue.destination as! ViewController
         switch segue.identifier! {
         case "View0":
-            viewController.view = SmoothedBezierInterpolationView0(frame: viewController.view.frame)
+            viewController.drawingView = SmoothedBezierInterpolationView0()
         case "View1":
-            viewController.view = SmoothedBezierInterpolationView1(frame: viewController.view.frame)
+            viewController.drawingView = SmoothedBezierInterpolationView1()
         case "View2":
-            viewController.view = SmoothedBezierInterpolationView2(frame: viewController.view.frame)
+            viewController.drawingView = SmoothedBezierInterpolationView2()
         case "View3":
-            viewController.view = SmoothedBezierInterpolationView3(frame: viewController.view.frame)
+            viewController.drawingView = SmoothedBezierInterpolationView3()
         case "View4":
-            viewController.view = SmoothedBezierInterpolationView4(frame: viewController.view.frame)
+            viewController.drawingView = SmoothedBezierInterpolationView4()
         case "View5":
-            viewController.view = SmoothedBezierInterpolationView5(frame: viewController.view.frame)
+            viewController.drawingView = SmoothedBezierInterpolationView5()
         default:
             break
         }

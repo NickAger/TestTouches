@@ -205,9 +205,31 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SmoothedBezierInterpolationView2" customModule="TestTouches" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="ChP-ne-Zka">
+                                <rect key="frame" x="20" y="84" width="335" height="563"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iu-wL-S7M">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="563"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ChP-ne-Zka" secondAttribute="trailing" constant="20" id="FH7-7g-VMP"/>
+                            <constraint firstItem="ChP-ne-Zka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S4d-Zv-AgC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ChP-ne-Zka" secondAttribute="bottom" constant="20" id="XnO-Pz-ER0"/>
+                            <constraint firstItem="ChP-ne-Zka" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oAw-Uy-dsb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="stackView" destination="ChP-ne-Zka" id="SAc-Yx-jcE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,6 +252,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxk-Rg-dVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-668" y="32"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wzf-zn-pSF">
+            <objects>
+                <viewController id="Cq0-aO-vI8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PDM-3j-clp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MfK-JH-s2s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIV-14-NHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

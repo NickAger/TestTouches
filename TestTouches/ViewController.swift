@@ -9,11 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var stackView: UIStackView!
+    var drawingView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        stackView.addArrangedSubview(drawingView)
+        drawingView.layer.borderColor = UIColor.gray.cgColor
+        drawingView.layer.borderWidth = 1
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

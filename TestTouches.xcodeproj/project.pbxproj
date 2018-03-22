@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840C7C50205662B500C6DC24 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		844010E6203338B5007040AC /* TestTouches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTouches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844010E9203338B5007040AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844010EB203338B5007040AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +118,7 @@
 		844010E8203338B5007040AC /* TestTouches */ = {
 			isa = PBXGroup;
 			children = (
+				840C7C50205662B500C6DC24 /* README.md */,
 				844010E9203338B5007040AC /* AppDelegate.swift */,
 				8440116120359F69007040AC /* TableViewController.swift */,
 				844010EB203338B5007040AC /* ViewController.swift */,
